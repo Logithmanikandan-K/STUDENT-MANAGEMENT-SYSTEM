@@ -4,7 +4,7 @@ import axios from "axios";
 import Sidebar from "./components/Sidebar";
 import "./App.css";
 
-const API = "http://localhost:5001/api";
+const API = process.env.REACT_APP_API_URL || "http://localhost:5001/api";
 
 function App() {
     const [token, setToken] = useState(
